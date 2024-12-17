@@ -587,3 +587,11 @@ nav > a.tipo9nava:hover {
     background-color: rgb(255, 230, 183);
     color: var(--cor9);
 }
+
+footer {
+    background-color: var(--cor15);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
