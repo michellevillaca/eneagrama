@@ -1,0 +1,589 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --fonte-texto: 'Nunito', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --fonte-main-title: 'Alegreya SC', 'Times New Roman', Times, serif;
+    --fonte-subtitle: 'Alegreya', Arial, Helvetica, sans-serif;
+
+    --cor0: #eae6d4;
+    --cor1: rgb(2, 183, 233);
+    --cor2: rgb(251, 79, 174);
+    --cor3: rgb(14, 150, 16);
+    --cor4: rgb(125, 6, 184);
+    --cor5: rgb(47, 112, 242);
+    --cor6: rgb(226, 208, 7);
+    --cor7: rgb(255, 85, 0);
+    --cor8: rgb(255, 2, 2);
+    --cor9: rgb(250, 167, 14);
+    --cor10: #f2ddff;
+    --cor11: #EAC7FF;
+    --cor12: #D782E8;
+    --cor13: #701582;
+    --cor14: #52215C;
+    --cor15: #3e1944;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor10);
+    background-attachment: fixed;
+    font-family: var(--fonte-texto);
+    font-weight: lighter;
+    text-align: justify;
+}
+
+body.tipo1bg {
+    background-color: rgba(2, 183, 233, 0.26);
+}
+
+body.tipo2bg {
+    background-color: rgba(251, 79, 174, 0.264);
+}
+
+body.tipo3bg {
+    background-color: rgba(14, 150, 16, 0.253)
+}
+
+body.tipo4bg {
+    background-color: rgba(180, 114, 255, 0.374);
+}
+
+body.tipo5bg {
+    background-color: rgba(47, 112, 242, 0.247);
+}
+
+body.tipo6bg {
+    background-color: rgba(226, 208, 7, 0.263);
+}
+
+body.tipo7bg {
+    background-color: rgba(255, 85, 0, 0.262);
+}
+
+body.tipo8bg {
+    background-color: rgba(255, 2, 2, 0.205);
+}
+
+body.tipo9bg {
+    background-color: rgba(250, 167, 14, 0.277);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor13), var(--cor14));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-main-title);
+    font-size: 3.5em;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.277);
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-texto);
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.277);
+}
+
+nav {
+    background-color: var(--cor15);
+    padding: 10px;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.207);
+}
+
+nav > a {
+    color: var(--cor10);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav > a:hover {
+    background-color: var(--cor11);
+    color: var(--cor15);
+}
+
+main {
+    min-width: 300px;
+    max-width: 850px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.422);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor15);
+    font-family: var(--fonte-subtitle);
+    font-weight: 500;
+    font-size: 1.75em;
+    text-indent: 30px;
+}
+
+main h2 {
+    color: var(--cor13);
+    font-family: var(--fonte-subtitle);
+    font-size: 1.1em;
+    font-weight: 200;
+    text-indent: 30px;
+}
+main h3 {
+    font-family: var(--fonte-subtitle);
+    font-weight: 400;
+    text-indent: 30px;
+}
+
+main p {
+    margin: 10px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.8em;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 450px;
+    display: block;
+    margin: auto;
+}
+
+.caixa {
+    display: block;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    border-radius: 7px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.253);
+    padding: 15px;
+    width: 300px;
+}
+
+div.principal {
+    background-color: var(--cor10);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.197);
+}
+
+div > p {
+    font-family: var(--fonte-texto);
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: 2px 10px 10px 10px;
+    padding: 2px 20px 10px 22px;
+    text-indent: 0px;
+}
+
+div.tipo1hover:hover {
+    background-color: var(--cor1);
+    border-radius: 5px;
+    padding: 8px 0px 0px 2px;
+    color: white;
+}
+
+div.tipo1hover:hover h2 {
+    color: white;
+}
+
+div.tipo2hover:hover {
+    background-color: var(--cor2);
+    border-radius: 5px;
+    padding: 8px 0px 0px 2px;
+    color: white;
+}
+
+div.tipo2hover:hover h2 {
+    color: white;
+}
+
+div.tipo3hover:hover {
+    background-color: var(--cor3);
+    border-radius: 5px;
+    padding: 8px 0px 0px 2px;
+    color: white;
+}
+
+div.tipo3hover:hover h2 {
+    color: white;
+}
+
+div.tipo4hover:hover {
+    background-color: var(--cor4);
+    border-radius: 5px;
+    padding: 8px 0px 0px 2px;
+    color: white;
+}
+
+div.tipo4hover:hover h2 {
+    color: white;
+}
+
+div.tipo5hover:hover {
+    background-color: var(--cor5);
+    border-radius: 5px;
+    padding: 8px 0px 0px 2px;
+    color: white;
+}
+
+div.tipo5hover:hover h2 {
+    color: white;
+}
+
+div.tipo6hover:hover {
+    background-color: var(--cor6);
+    border-radius: 5px;
+    padding: 8px 0px 0px 2px;
+    color: white;
+}
+
+div.tipo6hover:hover h2 {
+    color: white;
+}
+
+div.tipo7hover:hover {
+    background-color: var(--cor7);
+    border-radius: 5px;
+    padding: 8px 0px 0px 2px;
+    color: white;
+}
+
+div.tipo7hover:hover h2 {
+    color: white;
+}
+
+div.tipo8hover:hover {
+    background-color: var(--cor8);
+    border-radius: 5px;
+    padding: 8px 0px 0px 2px;
+    color: white;
+}
+
+div.tipo8hover:hover h2 {
+    color: white;
+}
+
+div.tipo9hover:hover {
+    background-color: var(--cor9);
+    border-radius: 5px;
+    padding: 8px 0px 0px 2px;
+    color: white;
+}
+
+div.tipo9hover:hover h2 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+hr {
+    margin: 20px 10px 40px 10px;
+}
+
+li {
+    text-indent: -1px;
+    margin-left: 50px;
+}
+.sub {
+    font-size: 0.90em;
+    font-style: italic;
+    margin-left: 90px;
+}
+.inicio {
+    text-decoration: underline;
+    font-family: var(--fonte-subtitle);
+    font-weight: 600;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.tiposub {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.13);
+}
+
+.tipo1 {
+    background-color: var(--cor1);
+    margin: 0px;
+    margin-top: -30px;
+    margin-bottom: -10px;
+    padding: 30px;
+}
+
+.tipo1nav {
+    background-color: rgb(2, 146, 186);
+    margin: 0px;
+    padding: 10px;
+}
+
+nav > a.tipo1nava {
+    color: rgb(179, 240, 255);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav > a.tipo1nava:hover {
+    background-color: rgb(179, 240, 255);
+    color: var(--cor1);
+}
+
+.tipo2 {
+    background-color: var(--cor2);
+    margin: 0px;
+    margin-top: -30px;
+    margin-bottom: -10px;
+    padding: 30px;
+}
+
+.tipo2nav {
+    background-color: rgb(181, 60, 127);
+    margin: 0px;
+    padding: 10px;
+}
+
+nav > a.tipo2nava {
+    color: rgb(253, 188, 224);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav > a.tipo2nava:hover {
+    background-color: rgb(253, 188, 224);
+    color: var(--cor2);
+}
+
+.tipo3 {
+    background-color: var(--cor3);
+    margin: 0px;
+    margin-top: -30px;
+    margin-bottom: -10px;
+    padding: 30px;
+}
+
+.tipo3nav {
+    background-color: rgb(11, 95, 12);
+    margin: 0px;
+    padding: 10px;
+}
+
+nav > a.tipo3nava {
+    color: rgb(177, 252, 179);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav > a.tipo3nava:hover {
+    background-color: rgb(177, 252, 179);
+    color: var(--cor3);
+}
+
+
+.tipo4 {
+    background-color: var(--cor4);
+    margin: 0px;
+    margin-top: -30px;
+    margin-bottom: -10px;
+    padding: 30px;
+}
+
+.tipo4nav {
+    background-color: rgb(76, 5, 111);
+    margin: 0px;
+    padding: 10px;
+}
+
+nav > a.tipo4nava {
+    color: rgb(245, 225, 255);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav > a.tipo4nava:hover {
+    background-color: rgb(245, 225, 255);
+    color: var(--cor4);
+}
+
+.tipo5 {
+    background-color: var(--cor5);
+    margin: 0px;
+    margin-top: -30px;
+    margin-bottom: -10px;
+    padding: 30px;
+}
+
+.tipo5nav {
+    background-color: rgb(29, 66, 140);
+    margin: 0px;
+    padding: 10px;
+}
+
+nav > a.tipo5nava {
+    color: rgb(187, 210, 255);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav > a.tipo5nava:hover {
+    background-color: rgb(187, 210, 255);
+    color: var(--cor5);
+}
+
+.tipo6 {
+    background-color: var(--cor6);
+    margin: 0px;
+    margin-top: -30px;
+    margin-bottom: -10px;
+    padding: 30px;
+}
+
+.tipo6nav {
+    background-color: rgb(121, 112, 5);
+    margin: 0px;
+    padding: 10px;
+}
+
+nav > a.tipo6nava {
+    color: rgb(255, 250, 192);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav > a.tipo6nava:hover {
+    background-color: rgb(255, 250, 192);
+    color: var(--cor6);
+}
+
+.tipo7 {
+    background-color: var(--cor7);
+    margin: 0px;
+    margin-top: -30px;
+    margin-bottom: -10px;
+    padding: 30px;
+}
+
+.tipo7nav {
+    background-color: rgb(135, 45, 0);
+    margin: 0px;
+    padding: 10px;
+}
+
+nav > a.tipo7nava {
+    color: rgb(255, 212, 191);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav > a.tipo7nava:hover {
+    background-color: rgb(255, 212, 191);
+    color: var(--cor7);
+}
+
+.tipo8 {
+    background-color: var(--cor8);
+    margin: 0px;
+    margin-top: -30px;
+    margin-bottom: -10px;
+    padding: 30px;
+}
+
+.tipo8nav {
+    background-color: rgb(132, 2, 2);
+    margin: 0px;
+    padding: 10px;
+}
+
+nav > a.tipo8nava {
+    color: rgb(255, 198, 198);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav > a.tipo8nava:hover {
+    background-color: rgb(255,198,198);
+    color: var(--cor8);
+}
+
+.tipo9 {
+    background-color: var(--cor9);
+    margin: 0px;
+    margin-top: -30px;
+    margin-bottom: -10px;
+    padding: 30px;
+}
+
+
+.tipo9nav {
+    background-color: rgb(146, 98, 10);
+    margin: 0px;
+    padding: 10px;
+}
+
+nav > a.tipo9nava {
+    color: rgb(255, 230, 183);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav > a.tipo9nava:hover {
+    background-color: rgb(255, 230, 183);
+    color: var(--cor9);
+}
